@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ca8-vT-S6z">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mad Libs!-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="SanderDeVries_pset2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFt-Qe-aGk">
+                                <rect key="frame" x="8" y="187" width="304" height="155"/>
+                                <string key="text">Welcome to Mad Libs! I Will ask you to fill in words to complete a story. You won't be able to see the whole story until you are done filling in all the missing words. That's part of the fun. Tap on one of the stories below to get started!</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madlibs" translatesAutoresizingMaskIntoConstraints="NO" id="K1V-iH-xkl">
+                                <rect key="frame" x="109.5" y="69" width="101" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Jht-ru-RCX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpC-Ip-quR">
+                                <rect key="frame" x="44" y="398" width="232" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-c1-uwh">
+                                        <rect key="frame" x="0.0" y="0.0" width="232" height="66.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzo-eR-OmQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="52" height="66.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Simple"/>
+                                                <connections>
+                                                    <action selector="storyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cTs-Of-fVZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW6-hh-wPc">
+                                                <rect key="frame" x="77" y="0.0" width="54" height="66.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Tarzan"/>
+                                                <connections>
+                                                    <action selector="storyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLP-TX-vcs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-YB-ts1">
+                                                <rect key="frame" x="156" y="0.0" width="76" height="66.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="University"/>
+                                                <connections>
+                                                    <action selector="storyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R39-RS-ciL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="EgD-6W-ag6">
+                                        <rect key="frame" x="40.5" y="83.5" width="151" height="66.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moU-iE-3Ht">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="66.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Clothes"/>
+                                                <connections>
+                                                    <action selector="storyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yrk-Ml-8LD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbF-d8-xjF">
+                                                <rect key="frame" x="101" y="0.0" width="50" height="66.5"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Dance"/>
+                                                <connections>
+                                                    <action selector="storyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6te-3B-NGk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Di8-VS-1jx"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" alignment="bottom" axis="horizontal" distribution="fill"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="K1V-iH-xkl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KLT-tx-G35"/>
+                            <constraint firstItem="YFt-Qe-aGk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="P2u-Lq-06n"/>
+                            <constraint firstItem="XpC-Ip-quR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hSR-H6-WEq"/>
+                            <constraint firstItem="K1V-iH-xkl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="kUV-OG-Evi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XpC-Ip-quR" secondAttribute="bottom" constant="20" id="lst-Tc-Ojs"/>
+                            <constraint firstItem="YFt-Qe-aGk" firstAttribute="top" secondItem="K1V-iH-xkl" secondAttribute="bottom" constant="8" id="wK8-Zg-4J6"/>
+                            <constraint firstAttribute="trailing" secondItem="YFt-Qe-aGk" secondAttribute="trailing" constant="8" id="wP0-jk-ccK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mad Libs!" id="8lX-WM-Jpc"/>
+                    <connections>
+                        <segue destination="Fvx-H2-Eyg" kind="show" identifier="wordsSegue" id="J8M-My-6b2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.0144927536232" y="131.25"/>
+        </scene>
+        <!--Words View Controller-->
+        <scene sceneID="q3U-Pb-n5c">
+            <objects>
+                <viewController id="Fvx-H2-Eyg" customClass="WordsViewController" customModule="SanderDeVries_pset2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="osH-YO-zEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill in the words to complete the story!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pA-wY-qKV">
+                                <rect key="frame" x="28" y="72" width="264.5" height="78"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="noun" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5f-MD-fK7">
+                                <rect key="frame" x="15" y="201" width="290" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x word(s) left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-42-GXM">
+                                <rect key="frame" x="108.5" y="158" width="103" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0pA-wY-qKV" firstAttribute="centerX" secondItem="osH-YO-zEZ" secondAttribute="centerX" id="0BG-kv-h7m"/>
+                            <constraint firstItem="hZ2-yI-dgG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0pA-wY-qKV" secondAttribute="trailing" id="0le-KD-zPF"/>
+                            <constraint firstItem="DHZ-42-GXM" firstAttribute="top" secondItem="0pA-wY-qKV" secondAttribute="bottom" constant="8" id="BUw-qY-UsJ"/>
+                            <constraint firstItem="DHZ-42-GXM" firstAttribute="centerX" secondItem="osH-YO-zEZ" secondAttribute="centerX" id="JOK-Xx-dai"/>
+                            <constraint firstItem="O5f-MD-fK7" firstAttribute="leading" secondItem="hZ2-yI-dgG" secondAttribute="leading" constant="15" id="TGM-aT-dfa"/>
+                            <constraint firstItem="O5f-MD-fK7" firstAttribute="top" secondItem="DHZ-42-GXM" secondAttribute="bottom" constant="20" id="ZAA-yO-Tym"/>
+                            <constraint firstItem="hZ2-yI-dgG" firstAttribute="trailing" secondItem="O5f-MD-fK7" secondAttribute="trailing" constant="15" id="fEz-hG-RvO"/>
+                            <constraint firstItem="0pA-wY-qKV" firstAttribute="top" secondItem="hZ2-yI-dgG" secondAttribute="top" constant="8" id="sD7-YE-qdL"/>
+                            <constraint firstItem="0pA-wY-qKV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hZ2-yI-dgG" secondAttribute="leading" id="tld-E3-S2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hZ2-yI-dgG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZM-Ui-uiL"/>
+                    <connections>
+                        <outlet property="wordsLeftLabel" destination="DHZ-42-GXM" id="i0Q-FD-abk"/>
+                        <outlet property="wordsTextfield" destination="O5f-MD-fK7" id="Iwu-an-9uQ"/>
+                        <segue destination="O0R-QX-cct" kind="show" identifier="storySegue" id="aCT-Fx-qw2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPF-M0-H61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.2" y="132.68365817091455"/>
+        </scene>
+        <!--Your MadLib Story-->
+        <scene sceneID="h7h-IL-uLJ">
+            <objects>
+                <viewController id="O0R-QX-cct" customClass="MadLibViewController" customModule="SanderDeVries_pset2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJy-34-q9l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLW-jM-PUD">
+                                <rect key="frame" x="8" y="72" width="304" height="400"/>
+                                <mutableString key="text">One of the most &lt;adjective&gt; characters in fiction is named
+"Tarzan of the &lt;plural-noun&gt; ." Tarzan was raised by a/an
+&lt;noun&gt; and lives in the &lt;adjective&gt; jungle in the
+heart of darkest &lt;place&gt; . He spends most of his time
+eating &lt;plural-noun&gt; and swinging from tree to &lt;noun&gt; .
+Whenever he gets angry, he beats on his chest and says,
+" &lt;funny-noise&gt; !" This is his war cry. Tarzan always dresses in
+&lt;adjective&gt; shorts made from the skin of a/an &lt;noun&gt;
+and his best friend is a/an &lt;adjective&gt; chimpanzee named
+Cheetah. He is supposed to be able to speak to elephants and
+&lt;plural-noun&gt; . In the movies, Tarzan is played by &lt;person's-name&gt; .</mutableString>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QKE-lP-e4u" firstAttribute="trailing" secondItem="dLW-jM-PUD" secondAttribute="trailing" constant="8" id="0yA-1j-W5P"/>
+                            <constraint firstItem="dLW-jM-PUD" firstAttribute="leading" secondItem="QKE-lP-e4u" secondAttribute="leading" constant="8" id="Duw-An-LUE"/>
+                            <constraint firstItem="dLW-jM-PUD" firstAttribute="top" secondItem="QKE-lP-e4u" secondAttribute="top" constant="8" id="LwP-ru-cBu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QKE-lP-e4u"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Your MadLib Story" id="sNe-h1-La8">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="9Sw-jU-i6L">
+                            <connections>
+                                <segue destination="1I8-Xu-FTh" kind="unwind" unwindAction="unwindToWelcomeScreenWithSegue:" id="Ih2-xd-7rJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="storyLabel" destination="dLW-jM-PUD" id="GDM-zr-J5N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUU-b5-HDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1I8-Xu-FTh" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2663.1999999999998" y="132.68365817091455"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cfc-7s-oVI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ca8-vT-S6z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lAG-hJ-F3e">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pUb-5b-MMu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSz-DO-3Ur" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="madlibs" width="101.51999664306641" height="110.87999725341797"/>
+    </resources>
+</document>
