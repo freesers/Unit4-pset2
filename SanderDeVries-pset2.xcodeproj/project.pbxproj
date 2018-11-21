@@ -89,15 +89,23 @@
 				114432E821A3725500C1B990 /* Main.storyboard */,
 				114432EB21A3725600C1B990 /* Assets.xcassets */,
 				114432ED21A3725600C1B990 /* LaunchScreen.storyboard */,
+				11E56B8421A5925E0086680B /* stories */,
+				11E56B7821A591450086680B /* Story.swift */,
+				114432F021A3725600C1B990 /* Info.plist */,
+			);
+			path = "SanderDeVries-pset2";
+			sourceTree = "<group>";
+		};
+		11E56B8421A5925E0086680B /* stories */ = {
+			isa = PBXGroup;
+			children = (
 				11E56B7921A591450086680B /* madlib0_simple.txt */,
 				11E56B7A21A591450086680B /* madlib1_tarzan.txt */,
 				11E56B7B21A591450086680B /* madlib2_university.txt */,
 				11E56B7721A591450086680B /* madlib3_clothes.txt */,
 				11E56B7C21A591450086680B /* madlib4_dance.txt */,
-				11E56B7821A591450086680B /* Story.swift */,
-				114432F021A3725600C1B990 /* Info.plist */,
 			);
-			path = "SanderDeVries-pset2";
+			name = stories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
