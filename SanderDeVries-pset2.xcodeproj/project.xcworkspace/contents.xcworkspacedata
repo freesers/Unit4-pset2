@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/sanderdevries/Documents/FPS &amp; Economie/Minor Programmeren/App Studio/Week3/MadLibs/SanderDeVries-pset2.xcodeproj">
+      location = "group:../SanderDeVries-pset2/madlib0_simple.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../SanderDeVries-pset2/madlib1_tarzan.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../SanderDeVries-pset2/madlib2_university.txt">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/sanderdevries/Documents/FPS &amp; Economie/Minor Programmeren/App Studio/Week3/SanderDeVries-pset2/SanderDeVries-pset2/madlib3_clothes.txt">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/sanderdevries/Documents/FPS &amp; Economie/Minor Programmeren/App Studio/Week3/SanderDeVries-pset2/SanderDeVries-pset2/madlib4_dance.txt">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/sanderdevries/Documents/FPS &amp; Economie/Minor Programmeren/App Studio/Week3/SanderDeVries-pset2/SanderDeVries-pset2/Story.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
